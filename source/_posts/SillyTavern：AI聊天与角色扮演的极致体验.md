@@ -1,9 +1,10 @@
 ---
 title: 【WIP】SillyTavern：AI聊天与角色扮演的极致体验
 date: 2025-05-05 10:00:37
+author: 暗宵
 tags:
- - 软件
- - 教程
+  - 软件
+  - 教程
 categories: 技术随笔
 index_img: /img/4.png
 ---
