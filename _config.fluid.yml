@@ -965,13 +965,13 @@ about:
   banner_mask_alpha: 0.3
   avatar: /img/icon.jpg
   name: "暗宵"
-  intro: "只是个苦逼高中生 下方图标扩列谢谢喵~"
+  intro: "只是个苦逼高中生（划掉，我趣我已经是大学生了🤓），下方图标扩列谢谢喵~"
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
   # More icons can be found from https://hexo.fluid-dev.com/docs/en/icon/  `class` is the css class of the icon. If adding `qrcode`, the icon is no longer a link, but a hovering QR code
   icons:
-    - { class: "iconfont icon-github-fill", link: "https://github.com/axAKAbigSB", tip: "GitHub" }
+    - { class: "iconfont icon-github-fill", link: "https://github.com/Yamiyoi", tip: "GitHub" }
     - { class: "iconfont icon-qq-fill", link: "https://qm.qq.com/cgi-bin/qm/qr?k=h-MyeHuIuO3E2iLvy5hVwxDbDD25WL-Z", tip: "QQ1146734053 若链接无效请手打orz" }
-    - { class: "iconfont icon-twitter-fill", link: "https://x.com/T0rnado5", tip: "X/Twitter" }
+    - { class: "iconfont icon-twitter-fill", link: "https://x.com/T0rnado-ax", tip: "X/Twitter" }
     - { class: "iconfont icon-steam", link: "https://steamcommunity.com/id/T0rnado0721/", tip: "Steam" }
 
 
