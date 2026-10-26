@@ -1,12 +1,11 @@
 ---
-title: SillyTavern：AI聊天与角色扮演的极致体验
+title: [WIP]SillyTavern：AI聊天与角色扮演的极致体验
 date: 2025-05-05 10:00:37
 tags:
  - 软件
  - 教程
 categories: 技术随笔
 index_img: /img/4.png
-hide: true
 ---
 ![](./SillyTavern：AI聊天与角色扮演的极致体验/3.png)
 # 什么是酒馆？
