@@ -1,5 +1,5 @@
 ---
-title: [WIP]SillyTavern：AI聊天与角色扮演的极致体验
+title: 【WIP】SillyTavern：AI聊天与角色扮演的极致体验
 date: 2025-05-05 10:00:37
 tags:
  - 软件
