@@ -1,0 +1,118 @@
+/* ===================================================
+   自定义样式：图片大小控制
+   =================================================== */
+.small-image {
+  width: 300px; /* 设置宽度 */
+  height: auto; /* 高度自动，保持图片比例 */
+}
+
+/* ===================================================
+   1. 移动端兼容 Tooltip 悬浮/轻触提示条
+   =================================================== */
+.hover-tip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1.5px dashed #499268; /* 点缀提示虚线 */
+  cursor: help;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hover-tip::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(33, 37, 41, 0.95);
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.85em;
+  line-height: 1.4;
+  text-align: left;
+  /* 移动端防溢出：自适应宽度与自动换行 */
+  white-space: normal;
+  max-width: min(80vw, 280px);
+  width: max-content;
+  word-break: break-word;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* 底部居中小三角指示箭头 */
+.hover-tip::before {
+  content: "";
+  position: absolute;
+  bottom: calc(130% - 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: rgba(33, 37, 41, 0.95) transparent transparent transparent;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  z-index: 1001;
+}
+
+/* PC 悬浮 或 手机点击聚焦激活 */
+.hover-tip:hover::after,
+.hover-tip:focus::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-3px);
+}
+
+.hover-tip:hover::before,
+.hover-tip:focus::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ===================================================
+   2. 防剧透/吐槽黑幕（Blackout）
+   =================================================== */
+.heimu {
+  background-color: #252525;
+  color: #252525;
+  text-shadow: none;
+  border-radius: 3px;
+  padding: 1px 5px;
+  margin: 0 2px;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+/* 悬停或点击聚焦时显形 */
+.heimu:hover,
+.heimu:active,
+.heimu:focus {
+  color: #ffffff !important;
+}
+
+/* 划词框选高亮（萌百经典彩蛋） */
+.heimu::selection {
+  color: #ffffff;
+  background-color: #007bff;
+}
+
+/* Fluid 暗黑模式适配 */
+[data-user-color-scheme="dark"] .heimu {
+  background-color: #3e4451;
+  color: #3e4451;
+}
+[data-user-color-scheme="dark"] .heimu:hover,
+[data-user-color-scheme="dark"] .heimu:active,
+[data-user-color-scheme="dark"] .heimu:focus {
+  color: #ffffff !important;
+}

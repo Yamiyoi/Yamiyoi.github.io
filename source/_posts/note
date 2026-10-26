@@ -9,3 +9,29 @@ index_img: /img/example.jpg #文章列表页的缩略图
 ###CSS
 <img src="图片路径" alt="图片描述" style="width: 宽度px; height: 高度px;">
 ###
+
+###文字特效（悬浮提示 Tooltip & 防剧透黑幕 Heimu）
+#### 1. 悬浮/轻触提示条（Tooltip）
+# 交互：PC 鼠标悬停显示，手机端轻触点击展开，点击空白处自动关闭
+# 方式 A：快捷语法糖（推荐，打字最快）
+{% tip "提示内容" 目标词汇 %}
+# 示例：
+这段代码的复杂度是 {% tip "这里采用了空间换时间策略" O(1) %}。
+
+# 方式 B：原生 HTML 标签
+<span class="hover-tip" tabindex="0" data-tip="提示内容">目标词汇</span>
+# 示例：
+这段代码的复杂度是 <span class="hover-tip" tabindex="0" data-tip="这里采用了空间换时间策略">O(1)</span>。
+
+#### 2. 防剧透/吐槽黑幕（Heimu / Blackout）
+# 交互：PC 鼠标悬停显形，手机端点击常亮显形，支持暗黑模式自适应与划词高亮
+# 方式 A：快捷语法糖（推荐，打字最快）
+{% heimu 吐槽或剧透内容 %}
+# 示例：
+其实折腾了一晚上，{% heimu 最后发现只是多打了一个全角空格 %}。
+
+# 方式 B：原生 HTML 标签
+<span class="heimu" tabindex="0">吐槽或剧透内容</span>
+# 示例：
+其实折腾了一晚上，<span class="heimu" tabindex="0">最后发现只是多打了一个全角空格</span>。
+###
